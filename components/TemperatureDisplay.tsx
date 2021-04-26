@@ -34,6 +34,7 @@ const TemperatureDisplay = () => {
 const styles = StyleSheet.create({
     temperatureDisplay: {
         backgroundColor: 'green',
+        height: '100%',
     },
 });
 

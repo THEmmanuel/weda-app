@@ -9,6 +9,7 @@ import React, {
 } from 'react';
 
 import {
+  StyleSheet,
   View,
   Text,
   // Image,
@@ -21,8 +22,6 @@ import {
 const App = () => {
   // const [weatherData, setWeatherData] = useState('');
   // const [cityName, setCityName] = useState('');
-
-
   // useEffect(() => {
   //   const fetchData = async () => {
   //     try {
@@ -41,17 +40,46 @@ const App = () => {
 
   return (
     <View>
-      <View>
+      <View style={[styles.container, styles.navContainer]}>
+        <Text>location icon?</Text>
+        <Text>city_name?</Text>
+        <Text>cakendar</Text>
+      </View>
+
+      <View style={[styles.container, styles.temperatureContainer]}>
         {TemperatureDisplay}
       </View>
 
-      <View>
+      <View style={[styles.container, styles.cardsContainer]}>
         <Text>Icon? bg?</Text>
         <Text>current weather: eg 25 deg c</Text>
         <Text>components containing the date and all.</Text>
       </View>
-    </View>);
+    </View>
+  );
 };
+
+const styles = StyleSheet.create({
+  container: {
+    width: '100%',
+  },
+
+  temperatureContainer: {
+    height: '60%',
+    width: '100%',
+    backgroundColor: 'orange',
+  },
+
+  cardsContainer: {
+    height: '35%',
+    backgroundColor: 'yellow',
+  },
+
+  navContainer: {
+    height: '5%',
+    backgroundColor: 'blue',
+  },
+});
 
 export default App;
 
