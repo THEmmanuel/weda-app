@@ -2,6 +2,7 @@
 // import axios from 'axios';
 
 import TemperatureDisplay from './components/TemperatureDisplay';
+import WeatherCard from './components/WeatherCard';
 
 import React, {
   // useState,
@@ -12,6 +13,7 @@ import {
   StyleSheet,
   View,
   Text,
+  ScrollView,
   // Image,
 } from 'react-native';
 
@@ -38,6 +40,7 @@ const App = () => {
   // }, [cityName]);
 
 
+  // const testArray = [1, 2, 3];
   return (
     <View>
       <View style={[styles.container, styles.navContainer]}>
@@ -47,14 +50,16 @@ const App = () => {
       </View>
 
       <View style={[styles.container, styles.temperatureContainer]}>
-        {TemperatureDisplay}
+        <TemperatureDisplay />
       </View>
 
-      <View style={[styles.container, styles.cardsContainer]}>
-        <Text>Icon? bg?</Text>
-        <Text>current weather: eg 25 deg c</Text>
-        <Text>components containing the date and all.</Text>
-      </View>
+      <ScrollView
+        style={[styles.container, styles.cardsContainer]}
+        horizontal={true}>
+        <WeatherCard />
+        <WeatherCard />
+        <WeatherCard />
+      </ScrollView>
     </View>
   );
 };
