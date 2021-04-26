@@ -1,8 +1,9 @@
 /* eslint-disable prettier/prettier */
 // import axios from 'axios';
-
 import TemperatureDisplay from './components/TemperatureDisplay';
 import WeatherCard from './components/WeatherCard';
+import Colors from './constants/Colors';
+
 
 import React, {
   // useState,
@@ -42,7 +43,7 @@ const App = () => {
 
   // const testArray = [1, 2, 3];
   return (
-    <View>
+    <View style={[styles.mainContainer]}>
       <View style={[styles.container, styles.navContainer]}>
         <Text>location icon?</Text>
         <Text>city_name?</Text>
@@ -59,34 +60,40 @@ const App = () => {
         <WeatherCard />
         <WeatherCard />
         <WeatherCard />
+        <WeatherCard />
+        <WeatherCard />
       </ScrollView>
     </View>
   );
 };
 
 const styles = StyleSheet.create({
+  mainContainer: {
+    flex: 1,
+    backgroundColor: Colors.uiColors.bgBlue,
+  },
+
   container: {
-    width: '100%',
-  },
-
-  temperatureContainer: {
-    height: '60%',
-    width: '100%',
-    backgroundColor: 'orange',
-  },
-
-  cardsContainer: {
-    height: '35%',
-    backgroundColor: 'yellow',
+    backgroundColor: 'transparent',
   },
 
   navContainer: {
-    height: '5%',
-    backgroundColor: 'blue',
+    flex: 1,
+  },
+
+  temperatureContainer: {
+    flex: 2,
+  },
+
+  cardsContainer: {
+    flex: 3,
   },
 });
 
 export default App;
+
+//Change values from % to flex!
+
 
 
 //Todos

@@ -6,6 +6,7 @@ export default {
         bgBlue: '#72EFED',
         cardBlue: '#95F6F5',
         darkBlue: '#232634',
-        text: '#F0F0F0',
+        textWhite: '#F0F0F0',
+        textLightBlue: '#7BB3C4',
     },
 };
