@@ -1,6 +1,8 @@
 /* eslint-disable prettier/prettier */
 // import axios from 'axios';
 
+import TemperatureDisplay from './components/TemperatureDisplay';
+
 import React, {
   // useState,
   // useEffect,
@@ -40,9 +42,7 @@ const App = () => {
   return (
     <View>
       <View>
-        <Text>Location Icon</Text>
-        <Text>Ciy name</Text>
-        <Text>Calendar icon</Text>
+        {TemperatureDisplay}
       </View>
 
       <View>
