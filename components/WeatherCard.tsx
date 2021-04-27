@@ -12,12 +12,12 @@ import {
 const WeatherCard = () => {
     return (
         <View style={styles.WeatherCardContainer}>
-            <Text>Today, 26 Apr</Text>
+            <Text style={styles.WeatherDate}>Today, 26 Apr</Text>
 
             <View style={styles.WeatherCard}>
                 <Text style={[styles.WeatherTime, styles.WeatherContent]}>10:00AM</Text>
-                <Text style={styles.WeatherIcon}>Cloud image</Text>
-                <Text style={styles.WeatherTemperature}>28</Text>
+                <Text style={[styles.WeatherIcon, styles.WeatherContent]}>Cloud image</Text>
+                <Text style={[styles.WeatherTemperature, styles.WeatherContent]}>28</Text>
             </View>
         </View>
     );
@@ -26,24 +26,33 @@ const WeatherCard = () => {
 
 const styles = StyleSheet.create({
     WeatherCardContainer: {
-        width: '32%',
-        // height: '85%',
+        // paddingLeft: 10,
+        // width: '22%',
+    },
+
+    WeatherDate: {
+        paddingBottom: 25,
+        fontSize: 14,
+        color: Colors.uiColors.textBlue,
+    },
+
+    WeatherTime: {
+        color: Colors.uiColors.textBlue,
+        fontSize: 12,
     },
 
     WeatherContent: {
-
+        paddingTop: 5,
+        paddingLeft: 15,
+        paddingRight: 15,
+        paddingBottom: 20,
     },
 
     WeatherCard: {
-        // height: '80',
         marginRight: 15,
         backgroundColor: Colors.uiColors.cardBlue,
         borderRadius: 5,
         alignItems: 'center',
-    },
-
-    WeatherTime: {
-
     },
 
     WeatherIcon: {
@@ -53,7 +62,7 @@ const styles = StyleSheet.create({
     WeatherTemperature: {
         color: Colors.uiColors.textBlue,
         fontSize: 35,
-        fontWeight: '600',
+        fontWeight: '700',
     },
 });
 

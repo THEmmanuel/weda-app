@@ -70,6 +70,7 @@ const App = () => {
 const styles = StyleSheet.create({
   mainContainer: {
     flex: 1,
+    // height: '100%',
     backgroundColor: Colors.uiColors.bgBlue,
   },
 
@@ -78,15 +79,19 @@ const styles = StyleSheet.create({
   },
 
   navContainer: {
-    flex: 1,
+    flex: 0.2,
+    // backgroundColor: 'brown',
   },
 
   temperatureContainer: {
-    flex: 2,
+    flex: 1.5,
+    backgroundColor: 'green',
   },
 
   cardsContainer: {
     flex: 3,
+    // backgroundColor: 'orange',
+    paddingLeft: 10,
   },
 });
 
