@@ -80,12 +80,13 @@ const styles = StyleSheet.create({
 
   navContainer: {
     flex: 0.2,
+    flexDirection: 'row',
     // backgroundColor: 'brown',
   },
 
   temperatureContainer: {
     flex: 1.5,
-    backgroundColor: 'green',
+    // backgroundColor: 'green',
   },
 
   cardsContainer: {

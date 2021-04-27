@@ -32,8 +32,9 @@ const styles = StyleSheet.create({
 
     WeatherDate: {
         paddingBottom: 25,
-        fontSize: 14,
+        fontSize: 15,
         color: Colors.uiColors.textBlue,
+        fontWeight: '600',
     },
 
     WeatherTime: {
