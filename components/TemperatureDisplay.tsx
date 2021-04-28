@@ -63,11 +63,12 @@ const styles = StyleSheet.create({
 
     WeatherInformationContainer: {
         flexDirection: 'row',
-        color: Colors.uiColors.textBlue,
+        color: Colors.uiColors.textBlue
     },
 
     WeatherInformation : {
         margin: 10,
+        color: Colors.uiColors.darkBlue,
     },
 });
 

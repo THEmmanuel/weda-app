@@ -1,11 +1,13 @@
 /* eslint-disable prettier/prettier */
 import React from 'react';
 import Colors from '../constants/Colors';
+import '../assets/ic_cloud_queue_24px.png';
 
 import {
     View,
     Text,
     StyleSheet,
+    Image,
 } from 'react-native';
 
 
@@ -16,7 +18,10 @@ const WeatherCard = () => {
 
             <View style={styles.WeatherCard}>
                 <Text style={[styles.WeatherTime, styles.WeatherContent]}>10:00AM</Text>
-                <Text style={[styles.WeatherIcon, styles.WeatherContent]}>Cloud image</Text>
+                <Image
+                    style={[styles.WeatherIcon, styles.WeatherContent]}
+                    source={require('../assets/ic_cloud_queue_24px.png')}
+                />
                 <Text style={[styles.WeatherTemperature, styles.WeatherContent]}>28</Text>
             </View>
         </View>
@@ -44,8 +49,8 @@ const styles = StyleSheet.create({
 
     WeatherContent: {
         paddingTop: 5,
-        paddingLeft: 15,
-        paddingRight: 15,
+        paddingLeft: 40,
+        paddingRight: 40,
         paddingBottom: 20,
     },
 
@@ -53,11 +58,13 @@ const styles = StyleSheet.create({
         marginRight: 15,
         backgroundColor: Colors.uiColors.cardBlue,
         borderRadius: 5,
+        // width: '40%',
         alignItems: 'center',
     },
 
     WeatherIcon: {
-
+        paddingRight: 10,
+        paddingLeft: 10,
     },
 
     WeatherTemperature: {
