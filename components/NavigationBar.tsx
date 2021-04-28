@@ -1,6 +1,7 @@
 /* eslint-disable prettier/prettier */
 import React from 'react';
 import {View, Text, StyleSheet} from 'react-native';
+import Colors from '../constants/Colors';
 
 const NavigationBar = () => {
     return (
@@ -23,7 +24,10 @@ const styles = StyleSheet.create({
     },
 
     CityName : {
+        fontSize: 20,
         flex: 3,
+        fontWeight: '400',
+        color : Colors.uiColors.textBlue,
     },
 
     Calendar : {

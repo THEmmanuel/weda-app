@@ -3,6 +3,7 @@
 import TemperatureDisplay from './components/TemperatureDisplay';
 import WeatherCard from './components/WeatherCard';
 import Colors from './constants/Colors';
+import NavigationBar from './components/NavigationBar';
 
 
 import React, {
@@ -45,9 +46,7 @@ const App = () => {
   return (
     <View style={[styles.mainContainer]}>
       <View style={[styles.container, styles.navContainer]}>
-        <Text>location icon?</Text>
-        <Text>city_name?</Text>
-        <Text>cakendar</Text>
+        <NavigationBar/>
       </View>
 
       <View style={[styles.container, styles.temperatureContainer]}>
