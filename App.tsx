@@ -1,5 +1,8 @@
 /* eslint-disable prettier/prettier */
 // import axios from 'axios';
+
+import 'react-native-gesture-handler';
+// import { NavigationContainer } from '@react-navigation/native';
 import TemperatureDisplay from './components/TemperatureDisplay';
 import WeatherCard from './components/WeatherCard';
 import Colors from './constants/Colors';
@@ -14,7 +17,7 @@ import React, {
 import {
   StyleSheet,
   View,
-  Text,
+  // Text,
   ScrollView,
   // Image,
 } from 'react-native';
@@ -44,25 +47,27 @@ const App = () => {
 
   // const testArray = [1, 2, 3];
   return (
-    <View style={[styles.mainContainer]}>
-      <View style={[styles.container, styles.navContainer]}>
-        <NavigationBar/>
-      </View>
+    // <View style={[styles.mainContainer]}>
+    //   <View style={[styles.container, styles.navContainer]}>
+    //     <NavigationBar/>
+    //   </View>
 
-      <View style={[styles.container, styles.temperatureContainer]}>
-        <TemperatureDisplay />
-      </View>
+    //   <View style={[styles.container, styles.temperatureContainer]}>
+    //     <TemperatureDisplay />
+    //   </View>
 
-      <ScrollView
-        style={[styles.container, styles.cardsContainer]}
-        horizontal={true}>
-        <WeatherCard />
-        <WeatherCard />
-        <WeatherCard />
-        <WeatherCard />
-        <WeatherCard />
-      </ScrollView>
-    </View>
+    //   <ScrollView
+    //     style={[styles.container, styles.cardsContainer]}
+    //     horizontal={true}>
+    //     <WeatherCard />
+    //     <WeatherCard />
+    //     <WeatherCard />
+    //     <WeatherCard />
+    //     <WeatherCard />
+    //   </ScrollView>
+    // </View>
+
+    
   );
 };
 

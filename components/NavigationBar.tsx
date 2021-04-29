@@ -1,20 +1,30 @@
 /* eslint-disable prettier/prettier */
 import React from 'react';
-import {View, Text, StyleSheet} from 'react-native';
+import {
+    View,
+    Text,
+    Button,
+    StyleSheet,
+} from 'react-native';
 import Colors from '../constants/Colors';
 
 const NavigationBar = () => {
     return (
-        <View style= {styles.NavigationBar}>
-            <Text style = {styles.LocationIcon}>Icon</Text>
-            <Text style = {styles.CityName}>Ibadan</Text>
-            <Text style = {styles.Calendar}>Icon</Text>
+        <View style={styles.NavigationBar}>
+            <Text style={styles.LocationIcon}>Icon</Text>
+            <Text style={styles.CityName}>Ibadan</Text>
+            <Button
+                title="Calendar Icon"
+                // style={styles.Calendar}
+                onPress={() => console.log('yo!')}>
+                {require('../assets/ic_cloud_queue_24px.png')}
+            </Button>
         </View>
     );
 };
 
 const styles = StyleSheet.create({
-    NavigationBar : {
+    NavigationBar: {
         flexDirection: 'row',
         flex: 1,
     },
@@ -23,14 +33,14 @@ const styles = StyleSheet.create({
         flex: 1,
     },
 
-    CityName : {
+    CityName: {
         fontSize: 20,
         flex: 3,
         fontWeight: '400',
-        color : Colors.uiColors.textBlue,
+        color: Colors.uiColors.textBlue,
     },
 
-    Calendar : {
+    Calendar: {
         flex: 1,
     },
 });

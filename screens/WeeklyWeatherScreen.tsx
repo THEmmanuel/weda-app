@@ -1,23 +1,31 @@
-// /* eslint-disable prettier/prettier */
-// import React from 'react';
-// import {
-//     View,
-//     Text,
-//     StyleSheet,
-// } from 'react-native';
+/* eslint-disable prettier/prettier */
 
-// const WeeklyWeatherScreen = () => {
-//     return (
-//         <View>
-//             <Text>
-//                 Omoooo!
-//             </Text>
-//         </View>
-//     );
-// };
+import React from 'react';
+import {
+    View,
+    Text,
+    StyleSheet,
+} from 'react-native';
 
-// const styles = StyleSheet.create({
+import WeekDayCard from '../components/WeekDayCard';
 
-// });
 
-// export default WeeklyWeatherScreen;
+const WeeklyWeatherScreen = () => {
+    return (
+        <View>
+
+            <View>
+                <Text>
+                    Next Week
+            </Text>
+                <WeekDayCard />
+            </View>
+        </View>
+    );
+};
+
+const styles = StyleSheet.create({
+    
+});
+
+export default WeeklyWeatherScreen;
