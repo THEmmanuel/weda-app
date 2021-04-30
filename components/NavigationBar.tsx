@@ -3,7 +3,7 @@ import React from 'react';
 import {
     View,
     Text,
-    Button,
+    // Button,
     StyleSheet,
 } from 'react-native';
 import Colors from '../constants/Colors';
@@ -13,12 +13,7 @@ const NavigationBar = () => {
         <View style={styles.NavigationBar}>
             <Text style={styles.LocationIcon}>Icon</Text>
             <Text style={styles.CityName}>Ibadan</Text>
-            <Button
-                title="Calendar Icon"
-                // style={styles.Calendar}
-                onPress={() => console.log('yo!')}>
-                {require('../assets/ic_cloud_queue_24px.png')}
-            </Button>
+            <Text> Calendar Icon </Text>
         </View>
     );
 };
