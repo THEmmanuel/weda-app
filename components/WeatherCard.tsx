@@ -33,6 +33,7 @@ const styles = StyleSheet.create({
     WeatherCardContainer: {
         // paddingLeft: 10,
         // width: '22%',
+        // backgroundColor: 'yellow',
     },
 
     WeatherDate: {

@@ -15,11 +15,11 @@ const WeeklyDayCard = () => {
                 Sunday
         </Text>
 
-            <Text style={styles.MaximumTemperature}>
+            <Text style={[styles.MaximumTemperature, styles.Temperature]}>
                 28
         </Text>
 
-            <Text style={styles.MinimumTemperature}>
+            <Text style={[styles.MinimumTemperature, styles.Temperature]}>
                 21
         </Text>
 
@@ -41,19 +41,21 @@ const styles = StyleSheet.create({
         color: Colors.WeeklyColors.textBlue,
         fontSize: 16,
         marginRight: 100,
+        fontWeight: '500',
     },
 
     MaximumTemperature: {
-        fontSize: 18,
-        opacity: 60,
         marginRight: 10,
         color: Colors.WeeklyColors.textBlue,
     },
 
     MinimumTemperature: {
-        fontSize: 18,
         marginRight: 50,
-        color: Colors.WeeklyColors.textBlue,
+        color: Colors.WeeklyColors.textLightBlue,
+    },
+
+    Temperature: {
+        fontSize: 18,
     },
 
     WeatherIcon: {

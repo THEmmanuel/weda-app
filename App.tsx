@@ -2,7 +2,7 @@
 // import axios from 'axios';
 
 import 'react-native-gesture-handler';
-// import { NavigationContainer } from '@react-navigation/native';
+import { NavigationContainer } from '@react-navigation/native';
 // import TemperatureDisplay from './components/TemperatureDisplay';
 // import WeatherCard from './components/WeatherCard';
 // import Colors from './constants/Colors';
