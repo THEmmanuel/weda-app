@@ -32,28 +32,32 @@ const WeeklyDayCard = () => {
 
 const styles = StyleSheet.create({
     WeeklyDayCard: {
+        flex: 1,
         flexDirection: 'row',
         marginBottom: 10,
     },
 
     WeekDay: {
-        color: Colors.uiColors.textWhite,
+        color: Colors.WeeklyColors.textBlue,
         fontSize: 16,
+        marginRight: 100,
     },
 
     MaximumTemperature: {
         fontSize: 18,
         opacity: 60,
-        color: Colors.uiColors.textWhite,
+        marginRight: 10,
+        color: Colors.WeeklyColors.textBlue,
     },
 
     MinimumTemperature: {
         fontSize: 18,
-        color: Colors.uiColors.textWhite,
+        marginRight: 50,
+        color: Colors.WeeklyColors.textBlue,
     },
 
     WeatherIcon: {
-        
+
     },
 
 

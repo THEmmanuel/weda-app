@@ -29,6 +29,10 @@ const WeeklyWeatherScreen = () => {
                 <WeekDayCard />
                 <WeekDayCard />
                 <WeekDayCard />
+                <WeekDayCard />
+                <WeekDayCard />
+                <WeekDayCard />
+                <WeekDayCard />
             </View>
         </View>
     );
@@ -37,7 +41,7 @@ const WeeklyWeatherScreen = () => {
 const styles = StyleSheet.create({
     WeeklyWeatherScreen: {
         flex: 1,
-        backgroundColor: Colors.uiColors.darkBlue,
+        backgroundColor: Colors.WeeklyColors.bgBlue,
     },
 
     TipsContainer: {
@@ -46,12 +50,13 @@ const styles = StyleSheet.create({
 
     WeekDayContainer: {
         flex: 2,
+        padding: 10,
     },
 
     TipsCard: {
         width: '95%',
         alignSelf: 'center',
-        backgroundColor: Colors.uiColors.tipsCardBlue,
+        backgroundColor: Colors.WeeklyColors.bgBlue,
         paddingTop: 15,
         paddingBottom: 15,
         paddingLeft: 5,
@@ -59,7 +64,7 @@ const styles = StyleSheet.create({
     },
 
     TipsText: {
-        color: Colors.uiColors.textWhite,
+        color: Colors.WeeklyColors.textBlue,
         width: '80%',
         fontSize: 15,
     },

@@ -39,7 +39,7 @@ const styles = StyleSheet.create({
     temperatureDisplay: {
         backgroundColor: 'transparent',
         flex: 1,
-        color: Colors.uiColors.textBlue,
+        color: Colors.WeatherColors.textBlue,
         // alignContent: 'center',
     },
 
@@ -53,22 +53,22 @@ const styles = StyleSheet.create({
         fontSize: 15,
         fontWeight: '500',
         paddingBottom: 10,
-        color: Colors.uiColors.textBlue,
+        color: Colors.WeatherColors.textBlue,
     },
     WeatherTemperature: {
         fontSize: 80,
         fontWeight: '600',
-        color: Colors.uiColors.textBlue,
+        color: Colors.WeatherColors.textBlue,
     },
 
     WeatherInformationContainer: {
         flexDirection: 'row',
-        color: Colors.uiColors.textBlue,
+        color: Colors.WeatherColors.textBlue,
     },
 
     WeatherInformation: {
         margin: 10,
-        color: Colors.uiColors.darkBlue,
+        color: Colors.WeatherColors.darkBlue,
     },
 
     WindSpeed: {

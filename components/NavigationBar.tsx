@@ -37,7 +37,7 @@ const styles = StyleSheet.create({
         fontSize: 20,
         flex: 3,
         fontWeight: '400',
-        color: Colors.uiColors.textBlue,
+        color: Colors.WeatherColors.textBlue,
     },
 
     Calendar: {

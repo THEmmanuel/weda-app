@@ -38,12 +38,12 @@ const styles = StyleSheet.create({
     WeatherDate: {
         paddingBottom: 25,
         fontSize: 15,
-        color: Colors.uiColors.textBlue,
+        color: Colors.WeatherColors.textBlue,
         fontWeight: '600',
     },
 
     WeatherTime: {
-        color: Colors.uiColors.textBlue,
+        color: Colors.WeatherColors.textBlue,
         fontSize: 12,
     },
 
@@ -56,7 +56,7 @@ const styles = StyleSheet.create({
 
     WeatherCard: {
         marginRight: 15,
-        backgroundColor: Colors.uiColors.cardBlue,
+        backgroundColor: Colors.WeatherColors.cardBlue,
         borderRadius: 5,
         // width: '40%',
         alignItems: 'center',
@@ -68,7 +68,7 @@ const styles = StyleSheet.create({
     },
 
     WeatherTemperature: {
-        color: Colors.uiColors.textBlue,
+        color: Colors.WeatherColors.textBlue,
         fontSize: 35,
         fontWeight: '700',
     },
