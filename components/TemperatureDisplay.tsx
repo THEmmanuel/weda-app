@@ -18,14 +18,14 @@ const TemperatureDisplay = () => {
                 <Text style={styles.WeatherTemperature}>28</Text>
 
                 <View style={styles.WeatherInformationContainer}>
-                    <View style = {styles.WeatherInformation}>
+                    <View style={styles.WeatherInformation}>
                         {/* <Image></Image> */}
                         <Text style={styles.WindSpeed}>0km/h</Text>
                     </View>
 
-                    <View style = {styles.WeatherInformation}>
+                    <View style={styles.WeatherInformation}>
                         {/* <Image></Image> */}
-                        <Text style={styles.WeatherPrecipiation}>47%</Text>
+                        <Text style={styles.WeatherPrecipitation}>47%</Text>
                     </View>
                 </View>
 
@@ -55,7 +55,7 @@ const styles = StyleSheet.create({
         paddingBottom: 10,
         color: Colors.uiColors.textBlue,
     },
-    WeatherTemperature : {
+    WeatherTemperature: {
         fontSize: 80,
         fontWeight: '600',
         color: Colors.uiColors.textBlue,
@@ -63,12 +63,20 @@ const styles = StyleSheet.create({
 
     WeatherInformationContainer: {
         flexDirection: 'row',
-        color: Colors.uiColors.textBlue
+        color: Colors.uiColors.textBlue,
     },
 
-    WeatherInformation : {
+    WeatherInformation: {
         margin: 10,
         color: Colors.uiColors.darkBlue,
+    },
+
+    WindSpeed: {
+
+    },
+
+    WeatherPrecipitation: {
+
     },
 });
 

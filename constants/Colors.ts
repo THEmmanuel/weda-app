@@ -8,5 +8,6 @@ export default {
         darkBlue: '#232634',
         textWhite: '#F0F0F0',
         textLightBlue: '#7BB3C4',
+        tipsCardBlue: '#2E3341',
     },
 };

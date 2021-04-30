@@ -15,11 +15,11 @@ const WeeklyDayCard = () => {
                 Sunday
         </Text>
 
-            <Text style={styles.MinimumTemperature}>
+            <Text style={styles.MaximumTemperature}>
                 28
         </Text>
 
-            <Text style={styles.MaximumTemperature}>
+            <Text style={styles.MinimumTemperature}>
                 21
         </Text>
 
@@ -32,13 +32,31 @@ const WeeklyDayCard = () => {
 
 const styles = StyleSheet.create({
     WeeklyDayCard: {
-        flex: 1,
         flexDirection: 'row',
+        marginBottom: 10,
     },
 
     WeekDay: {
-        color : Colors.uiColors.textWhite,
+        color: Colors.uiColors.textWhite,
+        fontSize: 16,
     },
+
+    MaximumTemperature: {
+        fontSize: 18,
+        opacity: 60,
+        color: Colors.uiColors.textWhite,
+    },
+
+    MinimumTemperature: {
+        fontSize: 18,
+        color: Colors.uiColors.textWhite,
+    },
+
+    WeatherIcon: {
+        
+    },
+
+
 });
 
 export default WeeklyDayCard;

@@ -3,11 +3,11 @@
 
 import 'react-native-gesture-handler';
 // import { NavigationContainer } from '@react-navigation/native';
-import TemperatureDisplay from './components/TemperatureDisplay';
-import WeatherCard from './components/WeatherCard';
-import Colors from './constants/Colors';
-import NavigationBar from './components/NavigationBar';
-
+// import TemperatureDisplay from './components/TemperatureDisplay';
+// import WeatherCard from './components/WeatherCard';
+// import Colors from './constants/Colors';
+// import NavigationBar from './components/NavigationBar';
+import WeeklyWeatherScreen from './screens/WeeklyWeatherScreen';
 
 import React, {
   // useState,
@@ -15,10 +15,10 @@ import React, {
 } from 'react';
 
 import {
-  StyleSheet,
-  View,
+  // StyleSheet,
+  // View,
   // Text,
-  ScrollView,
+  // ScrollView,
   // Image,
 } from 'react-native';
 
@@ -67,38 +67,38 @@ const App = () => {
     //   </ScrollView>
     // </View>
 
-    
+    <WeeklyWeatherScreen/>
   );
 };
 
-const styles = StyleSheet.create({
-  mainContainer: {
-    flex: 1,
-    // height: '100%',
-    backgroundColor: Colors.uiColors.bgBlue,
-  },
+// const styles = StyleSheet.create({
+//   mainContainer: {
+//     flex: 1,
+//     // height: '100%',
+//     backgroundColor: Colors.uiColors.bgBlue,
+//   },
 
-  container: {
-    backgroundColor: 'transparent',
-  },
+//   container: {
+//     backgroundColor: 'transparent',
+//   },
 
-  navContainer: {
-    flex: 0.2,
-    flexDirection: 'row',
-    // backgroundColor: 'brown',
-  },
+//   navContainer: {
+//     flex: 0.2,
+//     flexDirection: 'row',
+//     // backgroundColor: 'brown',
+//   },
 
-  temperatureContainer: {
-    flex: 1.5,
-    // backgroundColor: 'green',
-  },
+//   temperatureContainer: {
+//     flex: 1.5,
+//     // backgroundColor: 'green',
+//   },
 
-  cardsContainer: {
-    flex: 3,
-    // backgroundColor: 'orange',
-    paddingLeft: 10,
-  },
-});
+//   cardsContainer: {
+//     flex: 3,
+//     // backgroundColor: 'orange',
+//     paddingLeft: 10,
+//   },
+// });
 
 export default App;
 
