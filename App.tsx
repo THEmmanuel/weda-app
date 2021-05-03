@@ -10,7 +10,6 @@ import NavigationBar from './components/NavigationBar';
 import WeeklyWeatherScreen from './screens/WeeklyWeatherScreen';
 import { createStackNavigator } from '@react-navigation/stack';
 
-
 import React, { ReactNode } from 'react';
 
 import {
@@ -20,7 +19,8 @@ import {
   // Image,
 } from 'react-native';
 
-// const BASE_URL = ' https://api.weatherbit.io/v2.0/current?';
+
+// const BASE_URL = 'https://api.weatherbit.io/v2.0/current?';
 // const API_KEY = 'db0049048589475e9e668c253e679e28';
 const Stack = createStackNavigator();
 
