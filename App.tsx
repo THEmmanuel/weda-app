@@ -11,10 +11,7 @@ import WeeklyWeatherScreen from './screens/WeeklyWeatherScreen';
 import { createStackNavigator } from '@react-navigation/stack';
 
 
-import React, {
-  // useState,
-  // useEffect,
-} from 'react';
+import React, { ReactNode } from 'react';
 
 import {
   StyleSheet,
@@ -27,7 +24,7 @@ import {
 // const API_KEY = 'db0049048589475e9e668c253e679e28';
 const Stack = createStackNavigator();
 
-const App = () => {
+const App : () => ReactNode = () => {
   // const [weatherData, setWeatherData] = useState('');
   // const [cityName, setCityName] = useState('');
   // useEffect(() => {
