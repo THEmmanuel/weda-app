@@ -5,15 +5,18 @@ import {
     Text,
     // Button,
     StyleSheet,
+    Button,
 } from 'react-native';
 import Colors from '../constants/Colors';
 
-const NavigationBar = () => {
+const NavigationBar = ({ navigation }) => {
     return (
         <View style={styles.NavigationBar}>
             <Text style={styles.LocationIcon}>Icon</Text>
             <Text style={styles.CityName}>Ibadan</Text>
-            <Text> Calendar Icon </Text>
+            <Text
+                onPress={() => navigation.navigate('WeeklyWeatherScreen')}
+            > Calendar Icon </Text>
         </View>
     );
 };

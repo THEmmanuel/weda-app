@@ -3,7 +3,7 @@
 import TemperatureDisplay from './../components/TemperatureDisplay';
 import WeatherCard from './../components/WeatherCard';
 import Colors from './../constants/Colors';
-// import NavigationBar from './../components/NavigationBar';
+import NavigationBar from './../components/NavigationBar';
 
 import React, {
     // useState,
@@ -22,7 +22,7 @@ import {
 const HomeWeatherScreen = () => {
     return (
         <View style={[styles.mainContainer]}>
-
+            <NavigationBar />
             <View style={[styles.container, styles.temperatureContainer]}>
                 <TemperatureDisplay />
             </View>
@@ -30,7 +30,7 @@ const HomeWeatherScreen = () => {
             <ScrollView
                 style={[styles.container, styles.cardsContainer]}
                 horizontal={true}>
-                <WeatherCard />
+                <WeatherCard/>
                 <WeatherCard />
                 <WeatherCard />
                 <WeatherCard />
