@@ -6,50 +6,53 @@ import Colors from './constants/Colors';
 import { NavigationContainer } from '@react-navigation/native';
 // import WeeklyWeatherScreen from './screens/WeeklyWeatherScreen';
 import HomeWeatherScreen from './screens/HomeWeatherScreen';
-import NavigationBar from './components/NavigationBar';
 import WeeklyWeatherScreen from './screens/WeeklyWeatherScreen';
 import { createStackNavigator } from '@react-navigation/stack';
 
-import React, { ReactNode } from 'react';
+import React, { ReactNode, useState, useEffect } from 'react';
 
 import {
   StyleSheet,
-  View,
+  // View,
   // Text,
   // Image,
 } from 'react-native';
 
 
-// const BASE_URL = 'https://api.weatherbit.io/v2.0/current?';
-// const API_KEY = 'db0049048589475e9e668c253e679e28';
+//Global Variables.
+const BASE_URL = 'https://api.weatherbit.io/v2.0/current?';
+const API_KEY = 'db0049048589475e9e668c253e679e28';
 const Stack = createStackNavigator();
 
-const App : () => ReactNode = () => {
-  // const [weatherData, setWeatherData] = useState('');
-  // const [cityName, setCityName] = useState('');
-  // useEffect(() => {
-  //   const fetchData = async () => {
-  //     try {
-  //       setCityName('Ibadan');
-  //       const response = await axios(`${BASE_URL}&city=${cityName}&key=${API_KEY}`);
-  //       console.log(`${BASE_URL}&city=${cityName}&key=${API_KEY}`);
-  //       setWeatherData(response.data.timezone);
-  //       console.log(response.data);
-  //     } catch (error) {
-  //       console.log(error);
-  //     }
-  //   };
-  //   fetchData();
-  // }, [cityName]);
+const App: () => ReactNode = () => {
+  //API Calls.
+  //Data trickles down to components via props. Then get's managed via the component's states?
+  //UseEffect runs once on startup... hence the empty arrray passed as a second argument.
 
+  const [weatherData, setWeatherData] = useState('');
+  const [cityName, setCityName] = useState('');
+  useEffect(() => {
+    const fetchData = async () => {
+      try {
+        setCityName('Ibadan');
+        const response = await axios(`${BASE_URL}&city=${cityName}&key=${API_KEY}`);
+        console.log(`${BASE_URL}&city=${cityName}&key=${API_KEY}`);
+        setWeatherData(response.data.timezone);
+        console.log(response.data);
+      } catch (error) {
+        console.log(error);
+      }
+    };
+    fetchData();
+  }, [cityName]);
+
+  const getCityHandler = () => {
+    
+  };
   //API calls! dosen't work... yet.
   return (
     <NavigationContainer>
       <Stack.Navigator>
-        {/* <View style={[styles.navContainer]}>
-          <NavigationBar />
-        </View> */}
-
         {/* <StackScreens /> */}
         {/* <HomeWeatherScreen /> */}
         <Stack.Screen name="Home" component={HomeWeatherScreen} />
